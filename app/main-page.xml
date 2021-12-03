@@ -1,0 +1,17 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Compute Page" icon="" />
+    <StackLayout marginTop="10%">
+        <Button text="Get First Number" class="-primary" tap="{{firstTap}}" id="first"/>
+        <Label text="{{ number1 }}" textAlignment="center"/>
+        <Button text="Get Second Number" class="-primary" tap="{{secondTap}}" id="second"/>
+        <Label text="{{ number2 }}" textAlignment="center" />
+        <GridLayout columns="*, *, *, *" rows="60" marginTop="10%">
+            <Button text="+" row="0" col="0" class="-primary" id="plus" tap="onTap"/>
+            <Button text="-" row="0" col="1" class="-primary" id="minus" tap="onTap"/>
+            <Button text="*" row="0" col="2" class="-primary" id="multiply" tap="onTap"/>
+            <Button text="/" row="0" col="3" class="-primary" id="divide" tap="onTap"/>
+        </GridLayout>
+        <Label text="Result: " textAlignment="center"/>
+        <Label text="" textAlignment="center" id="result"/>
+    </StackLayout>
+</Page>

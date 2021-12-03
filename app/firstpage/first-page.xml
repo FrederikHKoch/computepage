@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Get Value Page" icon="" />
+    <StackLayout marginTop="10%">
+        <Label text="" textAlignment="center" id="messageFromFirst"/>
+        <TextField keyboardType="number" id="numberToReturn"/>
+        <Button text="Submit number" class="-primary" tap="goToMain"/>
+    </StackLayout>
+</Page>
